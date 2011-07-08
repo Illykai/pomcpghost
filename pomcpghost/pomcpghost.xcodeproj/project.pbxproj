@@ -1,0 +1,227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXFileReference section */
+		5A62D3AD13C74FF9009F10BC /* battleship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battleship.cpp; path = ../src/battleship.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3AE13C74FF9009F10BC /* battleship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = battleship.h; path = ../src/battleship.h; sourceTree = SOURCE_ROOT; };
+		5A62D3AF13C74FF9009F10BC /* beliefstate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = beliefstate.cpp; path = ../src/beliefstate.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3B013C74FF9009F10BC /* beliefstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = beliefstate.h; path = ../src/beliefstate.h; sourceTree = SOURCE_ROOT; };
+		5A62D3B113C74FF9009F10BC /* coord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = coord.cpp; path = ../src/coord.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3B213C74FF9009F10BC /* coord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coord.h; path = ../src/coord.h; sourceTree = SOURCE_ROOT; };
+		5A62D3B313C74FF9009F10BC /* experiment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = experiment.cpp; path = ../src/experiment.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3B413C74FF9009F10BC /* experiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = experiment.h; path = ../src/experiment.h; sourceTree = SOURCE_ROOT; };
+		5A62D3B513C74FF9009F10BC /* ghostgame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ghostgame.cpp; path = ../src/ghostgame.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3B613C74FF9009F10BC /* ghostgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ghostgame.h; path = ../src/ghostgame.h; sourceTree = SOURCE_ROOT; };
+		5A62D3B713C74FF9009F10BC /* grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = grid.h; path = ../src/grid.h; sourceTree = SOURCE_ROOT; };
+		5A62D3B813C74FF9009F10BC /* history.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = history.h; path = ../src/history.h; sourceTree = SOURCE_ROOT; };
+		5A62D3B913C74FF9009F10BC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3BA13C74FF9009F10BC /* mcts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mcts.cpp; path = ../src/mcts.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3BB13C74FF9009F10BC /* mcts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mcts.h; path = ../src/mcts.h; sourceTree = SOURCE_ROOT; };
+		5A62D3BC13C74FF9009F10BC /* memorypool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memorypool.h; path = ../src/memorypool.h; sourceTree = SOURCE_ROOT; };
+		5A62D3BD13C74FF9009F10BC /* network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = network.cpp; path = ../src/network.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3BE13C74FF9009F10BC /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = network.h; path = ../src/network.h; sourceTree = SOURCE_ROOT; };
+		5A62D3BF13C74FF9009F10BC /* node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = node.cpp; path = ../src/node.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3C013C74FF9009F10BC /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = node.h; path = ../src/node.h; sourceTree = SOURCE_ROOT; };
+		5A62D3C113C74FF9009F10BC /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = output.txt; path = ../src/output.txt; sourceTree = SOURCE_ROOT; };
+		5A62D3C213C74FF9009F10BC /* pocman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pocman.cpp; path = ../src/pocman.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3C313C74FF9009F10BC /* pocman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pocman.h; path = ../src/pocman.h; sourceTree = SOURCE_ROOT; };
+		5A62D3C413C74FF9009F10BC /* rocksample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rocksample.cpp; path = ../src/rocksample.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3C513C74FF9009F10BC /* rocksample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rocksample.h; path = ../src/rocksample.h; sourceTree = SOURCE_ROOT; };
+		5A62D3C613C74FF9009F10BC /* simulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = simulator.cpp; path = ../src/simulator.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3C713C74FF9009F10BC /* simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simulator.h; path = ../src/simulator.h; sourceTree = SOURCE_ROOT; };
+		5A62D3C813C74FF9009F10BC /* statistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = statistic.h; path = ../src/statistic.h; sourceTree = SOURCE_ROOT; };
+		5A62D3C913C74FF9009F10BC /* tag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tag.cpp; path = ../src/tag.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3CA13C74FF9009F10BC /* tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tag.h; path = ../src/tag.h; sourceTree = SOURCE_ROOT; };
+		5A62D3CB13C74FF9009F10BC /* testsimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = testsimulator.cpp; path = ../src/testsimulator.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3CC13C74FF9009F10BC /* testsimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testsimulator.h; path = ../src/testsimulator.h; sourceTree = SOURCE_ROOT; };
+		5A62D3CD13C74FF9009F10BC /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = ../src/utils.cpp; sourceTree = SOURCE_ROOT; };
+		5A62D3CE13C74FF9009F10BC /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = ../src/utils.h; sourceTree = SOURCE_ROOT; };
+		C6859E8B029090EE04C91782 /* pomcpghost.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = pomcpghost.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* pomcpghost */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = pomcpghost;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5A62D3AD13C74FF9009F10BC /* battleship.cpp */,
+				5A62D3AE13C74FF9009F10BC /* battleship.h */,
+				5A62D3AF13C74FF9009F10BC /* beliefstate.cpp */,
+				5A62D3B013C74FF9009F10BC /* beliefstate.h */,
+				5A62D3B113C74FF9009F10BC /* coord.cpp */,
+				5A62D3B213C74FF9009F10BC /* coord.h */,
+				5A62D3B313C74FF9009F10BC /* experiment.cpp */,
+				5A62D3B413C74FF9009F10BC /* experiment.h */,
+				5A62D3B513C74FF9009F10BC /* ghostgame.cpp */,
+				5A62D3B613C74FF9009F10BC /* ghostgame.h */,
+				5A62D3B713C74FF9009F10BC /* grid.h */,
+				5A62D3B813C74FF9009F10BC /* history.h */,
+				5A62D3B913C74FF9009F10BC /* main.cpp */,
+				5A62D3BA13C74FF9009F10BC /* mcts.cpp */,
+				5A62D3BB13C74FF9009F10BC /* mcts.h */,
+				5A62D3BC13C74FF9009F10BC /* memorypool.h */,
+				5A62D3BD13C74FF9009F10BC /* network.cpp */,
+				5A62D3BE13C74FF9009F10BC /* network.h */,
+				5A62D3BF13C74FF9009F10BC /* node.cpp */,
+				5A62D3C013C74FF9009F10BC /* node.h */,
+				5A62D3C113C74FF9009F10BC /* output.txt */,
+				5A62D3C213C74FF9009F10BC /* pocman.cpp */,
+				5A62D3C313C74FF9009F10BC /* pocman.h */,
+				5A62D3C413C74FF9009F10BC /* rocksample.cpp */,
+				5A62D3C513C74FF9009F10BC /* rocksample.h */,
+				5A62D3C613C74FF9009F10BC /* simulator.cpp */,
+				5A62D3C713C74FF9009F10BC /* simulator.h */,
+				5A62D3C813C74FF9009F10BC /* statistic.h */,
+				5A62D3C913C74FF9009F10BC /* tag.cpp */,
+				5A62D3CA13C74FF9009F10BC /* tag.h */,
+				5A62D3CB13C74FF9009F10BC /* testsimulator.cpp */,
+				5A62D3CC13C74FF9009F10BC /* testsimulator.h */,
+				5A62D3CD13C74FF9009F10BC /* utils.cpp */,
+				5A62D3CE13C74FF9009F10BC /* utils.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* pomcpghost.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		5A62D3A913C74F73009F10BC /* pomcpghost */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 5A62D3AC13C74FAA009F10BC /* Build configuration list for PBXLegacyTarget "pomcpghost" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/Owen/Documents/Workspace/pomcpghost;
+			dependencies = (
+			);
+			name = pomcpghost;
+			passBuildSettingsInEnvironment = 1;
+			productName = pomcpghost;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "pomcpghost" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* pomcpghost */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A62D3A913C74F73009F10BC /* pomcpghost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		5A62D3AA13C74F74009F10BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = pomcpghost;
+			};
+			name = Debug;
+		};
+		5A62D3AB13C74F74009F10BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = pomcpghost;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "pomcpghost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A62D3AC13C74FAA009F10BC /* Build configuration list for PBXLegacyTarget "pomcpghost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A62D3AA13C74F74009F10BC /* Debug */,
+				5A62D3AB13C74F74009F10BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

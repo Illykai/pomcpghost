@@ -1,0 +1,10 @@
+POMCPGhost 1.0
+
+This is an extension of David Silver and Joel Veness's original POMCP project to play the Ghost Game.
+-Owen Macindoe
+
+--- Original README for POMCP 1.0 ---
+
+This is the release of POMCP used in the NIPS 2010 paper
+"Online Monte-Carlo Planning in Large POMDPs"
+by David Silver and Joel Veness
