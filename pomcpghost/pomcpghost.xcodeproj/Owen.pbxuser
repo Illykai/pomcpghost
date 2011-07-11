@@ -34,7 +34,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					985,
 					20,
 					48,
 					43,
@@ -73,20 +73,30 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331829045;
-			PBXWorkspaceStateSaveDate = 331829045;
+			PBXPerProjectTemplateStateSaveDate = 332084505;
+			PBXWorkspaceStateSaveDate = 332084505;
 		};
 		perUserProjectItems = {
-			5A62D3E013C750B1009F10BC /* PBXTargetBookmark */ = 5A62D3E013C750B1009F10BC /* PBXTargetBookmark */;
-			5A62D3E113C750B1009F10BC /* PBXTextBookmark */ = 5A62D3E113C750B1009F10BC /* PBXTextBookmark */;
-			5A62D3E213C750B1009F10BC /* PBXTextBookmark */ = 5A62D3E213C750B1009F10BC /* PBXTextBookmark */;
-			5A62D3E313C750B1009F10BC /* PBXBookmark */ = 5A62D3E313C750B1009F10BC /* PBXBookmark */;
-			5A62D3E413C750B1009F10BC /* PBXTextBookmark */ = 5A62D3E413C750B1009F10BC /* PBXTextBookmark */;
-			5A62D3EC13C75121009F10BC /* PBXTextBookmark */ = 5A62D3EC13C75121009F10BC /* PBXTextBookmark */;
+			5A322E7C13CB351B00CCBBA1 /* PBXTextBookmark */ = 5A322E7C13CB351B00CCBBA1 /* PBXTextBookmark */;
+			5A62D3E013C750B1009F10BC = 5A62D3E013C750B1009F10BC /* PBXTargetBookmark */;
+			5A62D3E213C750B1009F10BC = 5A62D3E213C750B1009F10BC /* PBXTextBookmark */;
+			5A62D40613C7CE91009F10BC = 5A62D40613C7CE91009F10BC /* PBXTextBookmark */;
+			5A62D40713C7CE91009F10BC = 5A62D40713C7CE91009F10BC /* PBXTextBookmark */;
+			5A62D40813C7CE91009F10BC = 5A62D40813C7CE91009F10BC /* PBXTextBookmark */;
 		};
 		sourceControlManager = 5A62D3A513C74F4C009F10BC /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	5A322E7C13CB351B00CCBBA1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5A62D3AE13C74FF9009F10BC /* battleship.h */;
+		name = "battleship.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 0;
 	};
 	5A62D3A513C74F4C009F10BC /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -114,9 +124,9 @@
 	};
 	5A62D3AE13C74FF9009F10BC /* battleship.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 1170}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 1079}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 239}";
+			sepNavVisRange = "{0, 710}";
 		};
 	};
 	5A62D3B913C74FF9009F10BC /* main.cpp */ = {
@@ -129,26 +139,6 @@
 	5A62D3E013C750B1009F10BC /* PBXTargetBookmark */ = {
 		isa = PBXTargetBookmark;
 		trg = 5A62D3A913C74F73009F10BC /* pomcpghost */;
-		uiCtxt = {
-			TOCViewDetailVisibleRect = "{{0, 118}, {388, 199}}";
-			TOCViewExpandedItems = (
-				"com.apple.target-editor-pane.settings",
-			);
-			TOCViewMasterVisibleRect = "{{0, 0}, {151, 199}}";
-			TOCViewSelectedItems = (
-				"com.apple.target-editor-pane.settings",
-			);
-		};
-	};
-	5A62D3E113C750B1009F10BC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5A62D3AE13C74FF9009F10BC /* battleship.h */;
-		name = "battleship.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 239;
-		vrLoc = 0;
 	};
 	5A62D3E213C750B1009F10BC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -158,20 +148,6 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 388;
-		vrLoc = 0;
-	};
-	5A62D3E313C750B1009F10BC /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 5A62D3B913C74FF9009F10BC /* main.cpp */;
-	};
-	5A62D3E413C750B1009F10BC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5A62D3B913C74FF9009F10BC /* main.cpp */;
-		name = "main.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 410;
 		vrLoc = 0;
 	};
 	5A62D3EA13C75117009F10BC /* pomcp */ = {
@@ -232,16 +208,6 @@
 		path = /Users/Owen/Documents/Workspace/pomcpxcode/src/pomcp;
 		sourceTree = "<absolute>";
 	};
-	5A62D3EC13C75121009F10BC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5A62D3B913C74FF9009F10BC /* main.cpp */;
-		name = "main.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 795;
-		vrLoc = 0;
-	};
 	5A62D3F513C7516B009F10BC /* main.cpp:130 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -259,5 +225,35 @@
 		modificationTime = 331829615.797757;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
+	};
+	5A62D40613C7CE91009F10BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5A62D3B913C74FF9009F10BC /* main.cpp */;
+		name = "main.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 852;
+		vrLoc = 4396;
+	};
+	5A62D40713C7CE91009F10BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5A62D3AE13C74FF9009F10BC /* battleship.h */;
+		name = "battleship.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 239;
+		vrLoc = 0;
+	};
+	5A62D40813C7CE91009F10BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5A62D3AE13C74FF9009F10BC /* battleship.h */;
+		name = "battleship.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 0;
 	};
 }
