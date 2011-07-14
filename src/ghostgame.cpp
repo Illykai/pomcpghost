@@ -16,7 +16,11 @@ GHOSTGAME::GHOSTGAME(const int width, const int height)
 {
   cout << "Making Ghost Game with width: " << Width << " height: " << Height << endl;
   NumActions = 5;
-  NumObservations = 5;
+  // we're going to encode our observations as a bit vector
+  // each ghost and player will have their action encoded in binary as a number from 0-4 inclusive
+  // 0:n 1:e 2:s 3:w 4:x
+  // note that magic number of 3 is because it takes 3 bits to encode the 5 possible actions
+  NumObservations = 1 << (3*(NUM_GHOSTS + 2));
   // don't know if this is actually correct...
   RewardRange = 1;
   Discount = 1;
@@ -123,7 +127,8 @@ STATE* GHOSTGAME::CreateStartState() const
   ghostGameState->ActivePlayer = 0;
   // randomize the ghost that we're going for
   srand(time(NULL));
-  ghostGameState->TargetGhost = rand()%4;
+  //ghostGameState->TargetGhost = rand()%4;
+  ghostGameState->TargetGhost = 0;
   return ghostGameState;
 }
 
@@ -138,7 +143,11 @@ bool GHOSTGAME::Step(STATE& state, int action,
                       int& observation, double& reward) const
 { 
   GHOSTGAME_STATE& ghostGameState = safe_cast<GHOSTGAME_STATE&>(state);
-  observation = action;
+  // this is the number of bits in the representation of an action
+  int actionBits = 3;
+  // this is the bitwise encoding of a pass action
+  int passAction = 4;
+  observation = 0;
   srand(time(NULL));
   COORD move;
   if (action < 4)
@@ -152,6 +161,14 @@ bool GHOSTGAME::Step(STATE& state, int action,
   COORD newLoc;
   if(ghostGameState.ActivePlayer == 0) 
   {
+    // adding the move gives us the encoding of the observation
+    observation += action;
+    // we also need to mark the actions of everyone else as a pass
+    // magic number 5 is because there are 5 other entities
+    for(int i = 1; i <= 5; ++i) {
+      observation += (passAction << (actionBits*i));
+    }
+    
     MoveIfValid(ghostGameState.PlayerLoc, move);  
     if(ghostGameState.IsTerminalState())
     {
@@ -162,6 +179,9 @@ bool GHOSTGAME::Step(STATE& state, int action,
   }
   else 
   {
+    // it's the second player's turn, so we add a pass for P1 and bit shift the action
+    observation += passAction;
+    observation += (action << actionBits);
     MoveIfValid(ghostGameState.SidekickLoc, move);
     if(ghostGameState.IsTerminalState())
     {
@@ -169,7 +189,9 @@ bool GHOSTGAME::Step(STATE& state, int action,
       return true;
     }
     // now move all the ghosts
-    vector<COORD>::iterator iter;    
+    vector<COORD>::iterator iter;
+    // the ghost bits start after the first two human actions
+    int ghostBitOffset = 2*actionBits;
     for(iter = ghostGameState.GhostLocs.begin(); iter != ghostGameState.GhostLocs.end(); ++iter) 
     {
       int moveNum = rand() % 5;
@@ -181,7 +203,10 @@ bool GHOSTGAME::Step(STATE& state, int action,
       {
         move = COORD(0,0);
       }
+      // bitshift the ghost action and add it to the observation
+      observation += (moveNum << ghostBitOffset);
       MoveGhostIfValid(*iter, move, ghostGameState);
+      ghostBitOffset += actionBits;
     }
   }
   ghostGameState.ActivePlayer++;
@@ -196,7 +221,7 @@ bool GHOSTGAME::LocalMove(STATE& state, const HISTORY& history,
   GHOSTGAME_STATE& ghostGameState = safe_cast<GHOSTGAME_STATE&>(state);
   // permute the state
   srand(time(NULL));
-  ghostGameState.TargetGhost = rand() % 2;
+  //ghostGameState.TargetGhost = rand() % 2;
   return true;
 }
 
@@ -309,16 +334,47 @@ void GHOSTGAME::DisplayState(const STATE& state, ostream& ostr) const
 
 void GHOSTGAME::DisplayObservation(const STATE& state, int observation, ostream& ostr) const
 {
-  string move;
-  if (observation < 4) 
+  // reconstruct the observation
+  ostr << "Observed: " << observation << endl;
+  
+  int bitmask = 7;
+  int moveNum = observation & bitmask;
+  ostr << "P1: ";
+  if (moveNum < 4) 
   {
-    move = COORD::CompassString[observation];
+    ostr << COORD::CompassString[moveNum];
   } else 
   {
-    move = "Pass";
+    ostr << "Pass";
+  }
+  ostr << endl;
+  
+  observation = observation >> 3;
+  moveNum = observation & bitmask;
+  ostr << "P2: ";
+  if (moveNum < 4) 
+  {
+    ostr << COORD::CompassString[moveNum];
+  } else 
+  {
+    ostr << "Pass";
+  }
+  ostr << endl;
+  
+  for(int i = 0; i < NUM_GHOSTS; ++i) {
+    ostr << "G" << i <<": ";
+    observation = observation >> 3;
+    moveNum = observation & bitmask;
+    if (moveNum < 4) 
+    {
+      ostr << COORD::CompassString[moveNum];
+    } else 
+    {
+      ostr << "Pass";
+    }
+    ostr << endl;
   }
   
-  ostr << "Observed " << move << endl;
 }
 
 void GHOSTGAME::DisplayAction(int action, ostream& ostr) const

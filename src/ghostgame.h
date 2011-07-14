@@ -56,6 +56,8 @@ private:
   
   int Width, Height;
   std::vector<WALL> Walls;
+  // for now we're going to hard-code in the number of ghosts
+  static const int NUM_GHOSTS = 4; 
   
   mutable MEMORY_POOL<GHOSTGAME_STATE> MemoryPool;
 };

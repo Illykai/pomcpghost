@@ -136,6 +136,13 @@ void EXPERIMENT::Run()
         << ", average = " << Results.DiscountedReturn.GetMean() << endl;
     cout << "Undiscounted return = " << undiscountedReturn
         << ", average = " << Results.UndiscountedReturn.GetMean() << endl;
+  
+    if(undiscountedReturn > -20) 
+    {
+      cout << "History:" << endl;
+      mcts.GetHistory().Display(cout);
+      cout << endl;
+    }
 }
 
 void EXPERIMENT::MultiRun()

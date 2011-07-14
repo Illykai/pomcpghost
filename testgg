@@ -1,2 +1,2 @@
-#!/bin/sh
-src/pomcp --problem ghostgame --size 4 --verbose 4
+#/bin/sh
+src/pomcp --problem ghostgame --size 4 --mindoubles 8 --maxdoubles 8 --runs 100 
